@@ -113,7 +113,7 @@ def main():
         writer.writerow(["Category", "Algorithm", "Cipher Suite", "Time (s)"])
         writer.writerows(results)
 
-    print("Results saved to tls_results.csv ✅")
+    print("Results saved to tls_results.csv")
 
 
 if __name__ == "__main__":
