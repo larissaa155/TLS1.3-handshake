@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import csv
 
+def plot_tls_performance():
 labels = []
 times = []
 
