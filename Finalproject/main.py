@@ -3,7 +3,8 @@ import time
 import csv
 import random
 
-def test_handshake(cipher_suite, key_exchange, runs=3):
+random.seed(42)
+def test_handshake(cipher_suite, key_exchange, runs=10):
     times = []
     for _ in range(runs):
         start = time.time()
@@ -58,6 +59,8 @@ def simulate_signature(name):
 
 
 def hybrid_performance(classical, pq):
+    if classical is None:
+        return None
     return round(classical + pq, 4)
 
 
